@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guessthatmess.StartGame">
+
+    <com.example.guessthatmess.DoodleCanvas
+        android:id="@+id/doodleCanvas"
+        android:layout_width="400dp"
+        android:layout_height="380dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        android:id="@+id/btn_detect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_next"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="onDetectClick"
+        android:text="Guess"
+        android:textColor="#031FE6"
+        android:background="#C5CAF1"
+        />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onNextClick"
+        android:text="Next"
+        android:textColor="#167419"
+        android:background="#CAEECA"
+        />
+
+    <Button
+        android:id="@+id/btn_clear3"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="onClearClick"
+        android:text="Clear Doodle"
+        android:textColor="#9D55A8"
+        android:background="#E1CBEC"
+
+
+        />
+
+    <TextView
+        android:id="@+id/txt_draw_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:text="Doodle "
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        />
+
+    <TextView
+        android:id="@+id/txt_result_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:text="TextView"
+        android:textColor="#020101"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+
+        />
+</RelativeLayout>
